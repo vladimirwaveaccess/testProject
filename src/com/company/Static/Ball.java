@@ -1,7 +1,7 @@
 package com.company.Static;
 
 public class Ball {
-    public static int count = 0;
+    public static int count;
 
     static int getCountInstance() {
         return count;
@@ -18,5 +18,12 @@ public class Ball {
     protected void finalize() throws Throwable {
         System.out.println("ASD");
         count--;
+    }
+
+    @Override
+    public String toString() {
+        return "Ball{" +
+                "color='" + color + '\'' +
+                '}';
     }
 }
