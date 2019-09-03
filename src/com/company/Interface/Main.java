@@ -7,6 +7,7 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args) {
         A a = () -> System.out.println("hi");
+        a.m1();
 
         IntPredicate d = s -> s % 2 == 0;
         IntPredicate d1 = s -> s % 2 != 0;
