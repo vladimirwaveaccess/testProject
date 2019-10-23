@@ -35,4 +35,11 @@ public abstract class Shape {
     public int hashCode() {
         return Objects.hash(color);
     }
+
+    @Override
+    public String toString() {
+        return "Shape{" +
+                "color='" + color + '\'' +
+                '}';
+    }
 }

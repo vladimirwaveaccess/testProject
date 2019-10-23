@@ -1,12 +1,19 @@
 package com.company;
 
+import java.util.LinkedHashSet;
+import java.util.Set;
+
 public class Empty {
     public static void main(String[] args) {
-        int x = -8;
-        char ch = 'h';
-        double[] variable = {11, 22, 33, 44, 55, 66, 77, 88, 99, 10, 12, 13};
+        int[] x = {1,2,3,4,5,1};
+        Set<Integer> res = new LinkedHashSet<>();
 
-        System.out.println(variable[1]);
+
+        for (int i: x) {
+            res.add(i);
+        }
+
+        System.out.println(res);
 
     }
 }

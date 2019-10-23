@@ -56,4 +56,13 @@ public class Circle extends Shape {
     public void draw() {
         System.out.println("Circle");
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "x=" + x +
+                ", y=" + y +
+                ", z=" + z +
+                "} " + super.toString();
+    }
 }

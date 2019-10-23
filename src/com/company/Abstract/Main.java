@@ -11,6 +11,7 @@ public class Main {
         Circle circle1 = new Circle("Green", 10, 10, 10);
         Circle circle2 = new Circle("Red", 12, 12, 12);
         Circle circle3 = new Circle("Red", 12, 12, 12);
+
         for (Shape shape : shapes) {
             shape.draw();
             System.out.println(shape);
